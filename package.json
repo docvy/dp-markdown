@@ -1,0 +1,34 @@
+{
+  "name": "dp-markdown",
+  "version": "0.0.0",
+  "description": "A Docvy App plugin for Markdown files",
+  "icon": "markdown.png",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GochoMugo/dp-markdown.git"
+  },
+  "keywords": [
+    "docvy",
+    "plugin",
+    "markdown"
+  ],
+  "author": "GochoMugo <mugo@forfuture.co.ke>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GochoMugo/dp-markdown/issues"
+  },
+  "homepage": "https://github.com/GochoMugo/dp-markdown",
+  "dependencies": {
+    "showdown": "^0.4.0"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-mocha-test": "latest",
+    "istanbul": "latest"
+  }
+}
