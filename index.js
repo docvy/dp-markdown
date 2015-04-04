@@ -16,10 +16,14 @@ var converter = new Showdown.converter();
 
 
 /**
-* Accepts Markdown (md)
+* Accepts Markdown
+*
+* Almost like Github: https://github.com/github/markup/blob/
+* (cont) b865add2e053f8cea3d7f4d9dcba001bdfd78994/lib/github/
+* (cont)  markups.rb#L1
 */
 exports.accepts = function() {
-  return ["md"];
+  return ["md", "mkdn", "mdown", "markdown", "mkd"];
 };
 
 
