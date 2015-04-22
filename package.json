@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GochoMugo/dp-markdown.git"
+    "url": "https://github.com/docvy/dp-markdown.git"
   },
   "keywords": [
     "docvy",
@@ -19,9 +19,9 @@
   "author": "GochoMugo <mugo@forfuture.co.ke>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GochoMugo/dp-markdown/issues"
+    "url": "https://github.com/docvy/dp-markdown/issues"
   },
-  "homepage": "https://github.com/GochoMugo/dp-markdown",
+  "homepage": "https://github.com/docvy/dp-markdown",
   "dependencies": {
     "showdown": "^0.4.0"
   },
