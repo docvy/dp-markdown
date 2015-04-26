@@ -47,7 +47,7 @@ describe("plugin.accepts", function() {
 describe("plugin.produces", function() {
 
   it("returns an array", function() {
-    should(plugin.accepts()).be.an.Array;
+    should(plugin.produces()).be.an.Array;
   });
 
 });

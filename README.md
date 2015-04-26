@@ -10,6 +10,6 @@ A Docvy App plugin for Markdown files
 
 __The MIT License (MIT)__
 
-Copyright (c) 2015 Forfuture LLC <we@forfuture.co.ke>
+Copyright (c) 2015 Forfuture LLC <we@forfuture.co.ke> <br/>
 Copyright (c) 2015 GochoMugo <mugo@forfuture.co.ke>
 
