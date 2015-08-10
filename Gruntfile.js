@@ -1,39 +1,33 @@
 /**
-* Run script for Grunt, task runner
-*
-* The MIT License (MIT)
-* Copyright (c) 2015 GochoMugo <mugo@forfuture.co.ke>
-*/
+ * Run script for Grunt, task runner
+ *
+ * The MIT License (MIT)
+ * Copyright (c) 2015 GochoMugo <mugo@forfuture.co.ke>
+ */
+
+
+"use strict";
 
 
 exports = module.exports = function(grunt) {
-  "use strict";
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
-    jshint: {
-      all: [
-        "Gruntfile.js", "index.js"
-      ],
-      options: {
-        jshintrc: true
-      }
+    eslint: {
+      src: ["Gruntfile.js", "src/**/*.js"],
+      test: ["test/**/*.js"],
     },
     mochaTest: {
       test: {
         options: {
-          reporter: 'spec',
+          reporter: "spec",
           quiet: false,
-          clearRequireCache: false
+          clearRequireCache: false,
         },
-        src: ['test.js']
-      }
-    }
+        src: ["ctest/**/test.*.js"],
+      },
+    },
   });
 
-  grunt.loadNpmTasks("grunt-contrib-jshint");
-  grunt.loadNpmTasks("grunt-mocha-test");
-
-  grunt.registerTask("test", ["jshint", "mochaTest"]);
-
+  grunt.registerTask("test", ["eslint", "mochaTest"]);
 };
-
