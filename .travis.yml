@@ -5,3 +5,12 @@ node_js:
 - '0.10'
 script: npm test
 after_script: npm run test-coverage && cat ./coverage/lcov.info | coveralls
+deploy:
+  provider: npm
+  email: mugo@forfuture.co.ke
+  api_key:
+    secure: So2I/Y/XWaUyBWnx0uyHL1V2JksFxtYCKcAOnlCLk+DMEW/dKNhWmD/+CSrmUaj6Tw1Cy7S+loGmC4i4T1NOmRITY7dM1FYp9E/VBHcGbGZKGNE5SG7Nhsw8xT34qm442IxMqKH8y7SwI3Re2Zu8c8Tq2xBLP+IIP7iNiyoRg4o=
+  on:
+    tags: true
+    repo: docvy/dp-markdown
+    branch: master
